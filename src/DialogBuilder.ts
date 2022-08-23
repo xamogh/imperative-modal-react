@@ -15,14 +15,16 @@ class Dialog<T> {
   component?: ComponentType<T>;
   props: T = {} as T;
   viewRoot?: ReactDOM.Root;
+  rootId: string;
 
   constructor(dialogBuilder: IDialogBuilder<T>) {
     this.component = dialogBuilder.component;
+    this.rootId = `dialog-imperative-root-${Math.random() * 1000000}`;
   }
 
   private createView() {
     this.viewRoot = ReactDOM.createRoot(
-      document.createElement('dialog-imperative-root') as HTMLElement
+      document.createElement(this.rootId) as HTMLElement
     );
   }
 
@@ -67,7 +69,7 @@ class Dialog<T> {
     if (this.viewRoot) {
       this.viewRoot.unmount();
     }
-    const containerNode = document.getElementById("dialog-imperative-root");
+    const containerNode = document.getElementById(this.rootId);
     if (containerNode) {
       containerNode.remove();
     }

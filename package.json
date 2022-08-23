@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xamogh/imperative-modal-react.git"
+    "url": "https://github.com/xamogh/react-imperative-modal-dialog.git"
   },
-  "homepage": "https://github.com/xamogh/imperative-modal-react",
+  "homepage": "https://github.com/xamogh/react-imperative-modal-dialog",
   "keywords": [
     "react",
     "imperative",
@@ -47,7 +47,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-imperative-modal",
+  "name": "react-imperative-dialog-modal",
   "author": "xamogh",
   "module": "dist/mylib.esm.js",
   "size-limit": [

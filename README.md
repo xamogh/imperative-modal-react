@@ -9,7 +9,7 @@ Extremely lightweight imperative API for using react Modal/Dialog/Popover compon
 Install via npm or yarn
 
 ```bash
-  npm install react-imperative-modal
+  npm install react-imperative-dialog-modal 
 ```
     
 ## Usage/Examples
@@ -17,7 +17,7 @@ Install via npm or yarn
 #### Example provided with material-ui dialog component use. However can be used with any library or custom dialog similarly.
 
 ```javascript
-import DialogBuilder from 'react-imperative-modal'
+import DialogBuilder from 'react-imperative-dialog-modal'
 import { Dialog } from "@mui/material";
 
 
