@@ -68,6 +68,49 @@ function App() {
 ```
 
 
+## API Reference
+
+#### Instance creation
+```javascript
+    const dialog = new DialogBuilder<YourDialogComponentProps>()
+        .setComponent(YourDialogComponent)
+        .build();
+```
+
+#### Opening dialog
+
+```javascript
+    dialog.open();
+```
+
+#### Passing dialog component props
+
+```javascript
+    dialog.withProps((dialog) => {
+        yourDialogComponentProp1: "prop1",
+        yourDialogComponentProp2: "prop2",
+        yourDialogComponentProp3: async () => {
+            await doSomeAction();
+            dialog.close();
+        },
+    });
+```
+
+#### Closing dialog
+
+```javascript
+    dialog.close();
+```
+
+#### Unmount dialog
+
+```javascript
+    dialog.unmount();
+```
+
+
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
