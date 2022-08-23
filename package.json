@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -47,7 +47,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-imperative-dialog-modal",
+  "name": "react-imperative-modal-dialog",
   "author": "xamogh",
   "module": "dist/mylib.esm.js",
   "size-limit": [
